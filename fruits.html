@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruits Page</title>
+    <style>
+.logo{
+    margin-right: 2000px;
+}
+.header{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    height: 100px;
+    background-color: white; 
+    display: flex;
+    box-shadow: 0px 1px 0px rgb(0, 0, 0, 0.1);
+}
+body{
+    padding-top: 100px;
+    background-color: white;
+
+}
+.home-button{
+    background-color: white;
+    color: grey;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    padding-right: 30px;
+    border-radius: 5px;
+    padding-top: 20px;
+    padding-bottom: 0px;
+    padding-left: 20px;
+    margin-top: 30px;
+    font-style: italic;
+    margin-left: 240px;
+}
+.products-button{
+    background-color: white;
+    color: grey;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    padding-right: 30px;
+    border-radius: 5px;
+    padding-top: 20px;
+    padding-bottom: 0px;
+    padding-left: 20px;
+    margin-top: 30px;
+    font-style: italic;
+}
+.about-button{
+    background-color: white;
+    color: grey;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    padding-right: 30px;
+    border-radius: 5px;
+    padding-top: 20px;
+    padding-bottom: 0px;
+    padding-left: 20px;
+    margin-top: 30px;
+    font-style: italic;
+}
+.contact-button{
+    background-color: white;
+    color: red;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    padding-right: 30px;
+    border-radius: 5px;
+    padding-top: 20px;
+    padding-bottom: 0px;
+    padding-left: 20px;
+    margin-top: 30px;
+    font-style: italic;
+}
+.home-button:hover{
+    color:brown;
+}
+.products-button:hover{
+    color: brown;
+}
+.about-button:hover{
+    color: brown;
+}
+.contact-button:hover{
+    color: brown;
+}
+.veg-name{
+    font-weight: bold;
+    font-size: 20px;
+    color: brown;
+    text-align: left;
+    font-style: italic;
+}
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: #126d3c;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2) ;
+    z-index: 1;
+    margin-top: 10px;
+}
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover {
+    background-color: #f1f1f1
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.img{
+    object-fit: cover;
+}
+
+.grapes-button{
+    color: white;
+    font-weight: bold;
+    font-style: italic;
+    background-color: green;
+    border: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    cursor: pointer;
+}
+.mangos-button{
+    color: white;
+    font-weight: bold;
+    font-style: italic;
+    background-color: green;
+    border: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    cursor: pointer;
+}
+.pomegranate-button{
+    color: white;
+    font-weight: bold;
+    font-style: italic;
+    background-color: green;
+    border: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    cursor: pointer;
+}
+.strawberry-button{
+    color: white;
+    font-weight: bold;
+    font-style: italic;
+    background-color:green;
+    border: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    cursor: pointer;
+}
+.watermelon-button{
+    color: white;
+    font-weight: bold;
+    font-style: italic;
+    background-color: green;
+    border: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    cursor: pointer;
+}
+.grapes-button:hover{
+    color: white;
+    background-color: brown;
+}
+.mangos-button:hover{
+    color: white;
+    background-color: brown;
+}
+.pomegranate-button:hover{
+    color: white;
+    background-color: brown;
+}
+.strawberry-button:hover{
+    color: white;
+    background-color: brown;
+}
+.watermelon-button:hover{
+    color: white;
+    background-color: brown;
+}
+
+.one-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 50px;
+}
+.two-grid{
+    display: grid;
+    display: flex;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+.watermelon-pic{
+    margin-top: 50px;
+}
+.lemon-pic{
+    margin-top: 50px;
+}
+
+
+
+
+@media(max-width:600px){
+    .one-grid{
+        display: grid;
+        display: flex;
+        flex-direction: column;
+    }
+    .two-grid{
+        display: grid;
+        display: flex;
+        flex-direction: column;
+    }
+    .veg-name{
+        text-align: center;
+    }
+    .veg-pic{
+        width: 100%;
+    }
+
+    .grapes-pic, .mango-pic,.pomegranate-pic, .strawberry-pic{
+        margin-bottom: 100px;
+    }
+    .orange-pic{
+        margin-bottom: 0px;
+    }
+    .img{
+        overflow: hidden;
+    }
+    .home-button{
+        margin-left: 0px;
+        padding-right: 6px;
+        padding-left: 6px;
+
+    }
+    .products-button{
+        padding-left: 6px;
+        padding-right: 6px;
+    }
+    .about-button{
+        padding-left: 6px;
+        padding-right: 6px;
+    }
+    .contact-button{
+        padding-left: 6px;
+        padding-right: 6px;
+    }
+}
+
+
+@media (min-width:601px) and (max-width:820px){
+    .grapes-button,.mangos-button,.pomegranate-button,.strawberry-button,.watermelon-button{
+        font-size: 25px;
+    }
+    .veg-name{
+        font-size: 30px;
+    }
+    .img{
+        overflow: hidden;
+    }
+    .home-button{
+        margin-left: 0px;
+        font-size: 25px;
+    }
+    .products-button{
+        font-size: 25px;
+    }
+    .about-button{
+        font-size: 25px;
+    }
+    .contact-button{
+        font-size: 25px;
+    }
+}
+
+ 
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img class="img" width="200" src="Images/Original Logo.png" >
+        <a href="index.html"><button class="home-button">Home</button></a>
+
+        <div class="dropdown">
+            <a href="products.html"><button class="products-button">Products</button></a>
+
+            <div class="dropdown-content">
+                <a href="fruits.html">Fruits</a>
+                <a href="vegetables.html">Vegetables</a>
+                <a href="frozen.html">Frozen</a>
+            </div>
+
+        </div>
+        <a href="about_us.html"><button class="about-button">About Us</button></a>
+        <a href="contact.html"><button class="contact-button">Contact Us</button></a>
+    </div>    
+
+
+    <div class="one-grid">
+        <div  class="grapes-pic">
+            <img class="veg-pic" src="Images/grapes.jpg" width="200px">
+
+
+            <div class="veg-name">
+                <p class="veg-name">
+                    Grapes
+                </p>
+                <a href="grapes.html"><button class="grapes-button">To Learn More</button></a>
+            </div>
+
+        </div>
+        
+        <div class="mango-pic">
+            <img class="veg-pic" src="Images/mango2.webp" width="200px">
+
+            
+            <div class="veg-name">
+                <p class="veg-name">
+                    Mangoes
+                </p>
+                <a href="mangos.html"><button class="mangos-button">To Learn More</button></a>
+            </div>
+
+        </div>
+        
+        <div class="pomegranate-pic">
+            <img class="veg-pic" src="Images/pomegranate.jpg" width="200px">
+            <div class="veg-name">
+                <p class="veg-name">
+                    Pomegranate
+                </p>
+                <a href="pomegranate.html"><button class="pomegranate-button">To Learn More</button></a>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <div class="two-grid">
+        <div class="strawberry-pic">
+            <img class="veg-pic" src="Images/strawberry.jpg" width="200px">
+            <div class="veg-name">
+                <p class="veg-name">
+                    Strawberries
+                </p>
+                <a href="strawberry.html"><button class="strawberry-button">To Learn More</button></a>
+            </div>
+
+        </div>
+        
+        <div class="watermelon-pic">
+            <img class="veg-pic" src="Images/navel-orange.jpg"width="200px">
+            <div class="veg-name">
+                <p class="veg-name">
+                    Oranges
+                </p>
+                <a href="watermelon.html"><button class="watermelon-button">To Learn More</button></a>
+            </div>
+        </div>
+
+
+
+            <div class="lemon-pic">
+                <img class="veg-pic" src="Images/lemon.jpg" width="200px">
+                <div class="veg-name">
+                    <p class="veg-name">
+                        Lemons
+                    </p>
+                    <a href="lemon.html"><button class="pomegranate-button">To Learn More</button></a>
+                </div>
+    
+            </div>
+    </div>
+
+
+
+
+
+
+        
+
+
+</body>
+</html>

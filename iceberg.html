@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cabbage</title>
+    <style>
+        .head{
+            background-color: green;
+            color: white;
+            height: 40px;
+        }
+        .body-2{
+            background-color: rgb(212, 248, 212);
+            height: 70px;
+            text-align: center;
+        }
+        .table{
+            width: 50%;
+            border-spacing: 1px;
+            margin-top: 30px;
+        }
+        .lettuce-img{
+            width: 350px;
+            margin-top: 100px;
+        }
+        .header{
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            right: 0px;
+            height: 100px;
+            background-color: white; 
+            display: flex;
+            box-shadow: 0px 1px 0px rgb(0, 0, 0, 0.1);
+        }
+        .body{
+           padding-top: 100px;
+           background-color: white;
+
+        }
+        .home-button{
+            background-color: white;
+            color: grey;
+            border: none;
+            cursor: pointer;
+            font-size: 20px;
+            padding-right: 30px;
+            border-radius: 5px;
+            padding-top: 20px;
+            padding-bottom: 0px;
+            padding-left: 20px;
+            margin-top: 30px;
+            font-style: italic;
+            margin-left: 240px;
+        }
+        .products-button{
+           background-color: white;
+           color: grey;
+           border: none;
+           cursor: pointer;
+           font-size: 20px;
+           padding-right: 30px;
+           border-radius: 5px;
+           padding-top: 20px;
+           padding-bottom: 0px;
+           padding-left: 20px;
+           margin-top: 30px;
+           font-style: italic;
+        }
+        .about-button{
+           background-color: white;
+           color: grey;
+           border: none;
+           cursor: pointer;
+           font-size: 20px;
+           padding-right: 30px;
+           border-radius: 5px;
+           padding-top: 20px;
+           padding-bottom: 0px;
+           padding-left: 20px;
+           margin-top: 30px;
+           font-style: italic;
+        }
+        .contact-button{
+           background-color: white;
+           color: red;
+           border: none;
+           cursor: pointer;
+           font-size: 20px;
+           padding-right: 30px;
+           border-radius: 5px;
+           padding-top: 20px;
+           padding-bottom: 0px;
+           padding-left: 20px;
+           margin-top: 30px;
+           font-style: italic;
+        }
+        .img-container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .table-container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .img{
+            object-fit: cover;
+        }
+        td{
+            color: green;
+            font-style: italic;
+        }
+        th{
+            font-style: italic;
+        }
+
+        @media(max-width:600px){
+            body{
+                background-color: white;
+            }
+            .lettuce-img{
+                width: 100%;
+            }
+            .table{
+                width: 100%;
+            }
+            .img{
+        overflow: hidden;
+    }
+    .home-button{
+        margin-left: 0px;
+        padding-right: 6px;
+        padding-left: 6px;
+
+    }
+    .products-button{
+        padding-left: 6px;
+        padding-right: 6px;
+    }
+    .about-button{
+        padding-left: 6px;
+        padding-right: 6px;
+    }
+    .contact-button{
+        padding-left: 6px;
+        padding-right: 6px;
+    }
+        }
+
+        @media (min-width:601px) and (max-width:820px){
+        .img{
+        overflow: hidden;
+    }
+    .home-button{
+        margin-left: 0px;
+        font-size: 25px;
+    }
+    .products-button{
+        font-size: 25px;
+    }
+    .about-button{
+        font-size: 25px;
+    }
+    .contact-button{
+        font-size: 25px;
+    }
+    .table{
+        width: 90%;
+        font-size: 25px;
+    }
+    .lettuce-img{
+        width: 80%;
+    }
+    }
+
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <img class="img" width="200"  src="Images/Original Logo.png" >
+        <a href="index.html"><button class="home-button">Home</button></a>
+        <a href="products.html"><button class="products-button">Products</button></a>
+        <a href="about_us.html"><button class="about-button">About Us</button></a>
+        <a href="contact.html"><button class="contact-button">Contact Us
+        </button></a>
+    </div>
+</div> 
+
+
+    <div class="img-container">
+        <img class="lettuce-img" src="Images/cabbage.jpg">
+    </div>
+
+    <div class="table-container">
+        <table class="table">
+            <tr class="head">
+                <th>VARIETY</th>
+                <th>SEASON</th>
+                <th>Sizes</th>
+                <th>PACKING</th>
+            </tr>
+
+            <tr class="body-2">
+                <td>Egyptian Cabbage</td>
+                <td>All The Year</td>
+                <td>1 PIECE = 1 ~ 1.25 KG</td>
+                <td>PACKAGE
+                    6 KG CARTON
+                </td>
+            </tr>
+    </table>
+    </div>
+
+    
+</body>
+</html>

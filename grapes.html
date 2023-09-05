@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grapes</title>
+    <style>
+        .head{
+            background-color: green;
+            color: white;
+            height: 40px;
+            text-align: center;
+        }
+        .body-2{
+            background-color: rgb(212, 248, 212);
+            height: 70px;
+            text-align: center;
+        }
+        .table{
+            border-spacing: 1px;
+            margin-top: 30px;
+        }
+        .lemon-disc{
+            text-align: center;
+            color: green;
+            font-size: 18px;
+            margin-bottom: 0px;
+        }
+        .lettuce-img{
+            width: 350px;
+            margin-top: 100px;
+        }
+        .header{
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            right: 0px;
+            height: 100px;
+            background-color: white; 
+            display: flex;
+            box-shadow: 0px 1px 0px rgb(0, 0, 0, 0.1);
+        }
+        .body{
+           padding-top: 100px;
+           background-color: white;
+
+        }
+        .home-button{
+            background-color: white;
+            color: grey;
+            border: none;
+            cursor: pointer;
+            font-size: 20px;
+            padding-right: 30px;
+            border-radius: 5px;
+            padding-top: 20px;
+            padding-bottom: 0px;
+            padding-left: 20px;
+            margin-top: 30px;
+            font-style: italic;
+            margin-left: 240px;
+        }
+        .products-button{
+           background-color: white;
+           color: grey;
+           border: none;
+           cursor: pointer;
+           font-size: 20px;
+           padding-right: 30px;
+           border-radius: 5px;
+           padding-top: 20px;
+           padding-bottom: 0px;
+           padding-left: 20px;
+           margin-top: 30px;
+           font-style: italic;
+        }
+        .about-button{
+           background-color: white;
+           color: grey;
+           border: none;
+           cursor: pointer;
+           font-size: 20px;
+           padding-right: 30px;
+           border-radius: 5px;
+           padding-top: 20px;
+           padding-bottom: 0px;
+           padding-left: 20px;
+           margin-top: 30px;
+           font-style: italic;
+        }
+        .contact-button{
+           background-color: white;
+           color: red;
+           border: none;
+           cursor: pointer;
+           font-size: 20px;
+           padding-right: 30px;
+           border-radius: 5px;
+           padding-top: 20px;
+           padding-bottom: 0px;
+           padding-left: 20px;
+           margin-top: 30px;
+           font-style: italic;
+        }
+        .img-container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .table-container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .img{
+            object-fit: cover;
+        }
+        td{
+            color: green;
+            font-style: italic;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+        }
+        th{
+            font-style: italic;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+
+
+        @media(max-width:600px){
+            body{
+                background-color: white;
+            }
+            .lettuce-img{
+                width: 100%;
+            }
+            .table{
+                width: 100%;
+                display: block;
+
+            }
+            .img{
+                display: none;
+            }
+           .home-button{
+                 margin-left: 20px;
+                 padding-right: 6px;
+                 padding-left: 6px;
+
+            }
+            .products-button{
+                padding-left: 6px;
+                padding-right: 6px;
+            }
+            .about-button{
+                padding-left: 6px;
+                padding-right: 6px;
+            }
+            .contact-button{
+               padding-left: 6px;
+               padding-right: 6px;
+            }
+            
+            
+
+            
+    
+    
+        }
+
+        @media (min-width:601px) and (max-width:820px){
+        .img{
+         overflow: hidden;
+    }
+    .home-button{
+        margin-left: 0px;
+        font-size: 25px;
+    }
+    .products-button{
+        font-size: 25px;
+    }
+    .about-button{
+        font-size: 25px;
+    }
+    .contact-button{
+        font-size: 25px;
+    }
+    .table{
+        width: 90%;
+        font-size: 25px;
+    }
+    .lettuce-img{
+        width: 80%;
+    }
+    }
+
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <img class="img" width="200"  src="Images/Original Logo.png" >
+        <a href="index.html"><button class="home-button">Home</button></a>
+        <a href="products.html"><button class="products-button">Products</button></a>
+        <a href="about_us.html"><button class="about-button">About Us</button></a>
+        <a href="contact.html"><button class="contact-button">Contact Us
+        </button></a>
+    </div>
+</div> 
+
+
+    <div class="img-container">
+        <img class="lettuce-img" src="Images/grapes.jpg">
+    </div>
+
+
+    <div class="lemon-disc">
+        Window and Specifications of our fresh Grapes varieties:
+    </div>
+
+    <div class="table-container">
+        <table class="table">
+            <tr class="head">
+                <th>VARIETY</th>
+                <th>Availability</th>
+                <th>Diameter/size</th>
+                <th>Brix/Sugar Level</th>
+            </tr>
+
+            <tr class="body-2">
+                <td>White Sugraone Seedless<br><hr>Red Flame Seedless<br><hr>Red Crimson Seedless<br><hr>Red Globe (Seeded)</td>
+                <td>From week 21 till week 27<br><hr>From Week 23 till week 28<br><hr>From week 27 till week 36<br><hr>From week 28 till week 33 </td>
+                <td>+17mm<br><hr>17mm<br><hr>17mm<br><hr>22-30mm</td>
+                <td>Minimum 16%<br><hr>Minimum 17%<br><hr>Minimum 17%<br><hr>Minimum 16%</td>
+
+            </tr>
+
+
+         </table>
+    </div>
+
+    <br><br>
+
+    <div class="lemon-disc">
+        Grapes’ Packing for Sea shipments:
+    </div>
+
+
+    <div class="table-container">
+        <table class="table">
+            <tr class="head">
+                <th>Carton Net Weight</th>
+                <th>No. of bags/punnets/carton</th>
+                <th>Cartons/pallet</th>
+                <th>Pallets/container</th>
+                <th>Cartons/container</th>
+                <th>Container Net Weight/ton</th>
+            </tr>
+
+            <tr class="body-2">
+                <td>4.5 KG<br><hr>5 KG <br><hr>9KG</td>
+                <td>9 Plastic bags*500gm<br><hr>10 Punnets*500gm<br><hr>18 Plastic bags*500gm</td>
+                <td>170<br><hr>120<br><hr>85</td>
+                <td>20<br><hr>20<br><hr>20</td>
+                <td>3400<br><hr>2400<br><hr>1700</td>
+                <td>15300<br><hr>12000<br><hr>15300</td>
+            </tr>
+         </table>
+    </div>
+
+    <br><br>
+
+
+    
+</body>
+</html>
